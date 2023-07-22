@@ -1,0 +1,2776 @@
+@font-face {
+  font-family: "Arial - Bold Italic MT";
+  src: url("../fonts/Arial-BoldItalicMT.ttf");
+}
+@font-face {
+  font-family: "Myriad Pro - Bold Cond";
+  src: url("../fonts/Myriad Pro - Bold Cond.otf");
+}
+@font-face {
+  font-family: "Myriad Pro - Cond";
+  src: url("../fonts/MyriadPro-Cond.ttf");
+}
+@font-face {
+  font-family: "Arial Narrow";
+  src: url("../fonts/Arial Narrow.TTF");
+}
+@font-face {
+  font-family: "Arial Narrow - Bold";
+  src: url("../fonts/Arial Narrow - Bold.ttf");
+}
+@font-face {
+    font-family: "Arial - Italian";
+    src: url("../fonts/Arial - Italian.ttf");
+}
+@font-face {
+    font-family: "Arial Reg";
+    src: url("../fonts/arial reg.ttf");
+}
+@font-face {
+  font-family: "Calibri";
+  src: url("../fonts/Calibri.ttf");
+}
+@font-face {
+  font-family: "Calibri - Bold";
+  src: url("../fonts/Calibri - Bold.ttf");
+}
+@font-face {
+    font-family: "CalibriReg";
+    src: url("../fonts/CalibriReg.ttf");
+}
+html{
+    font-size: calc(100vw / 1920 * 10);
+    @media (max-width:1024px) {
+        font-size: calc(100vw / 768 * 7.5);
+    }
+    @media (max-width:767px) {
+        font-size: calc(100vw / 500 * 6.6);
+    }
+    @media (max-width:500px) {
+        font-size: calc(100vw / 360 * 7.4);
+    }
+    @media (max-width:360px) {
+        font-size: calc(100vw / 300 * 6.8);
+    }
+}
+$color-gre: #0c0c0c;
+a{
+    color: #0000cc;
+}
+.container {
+    width: 128rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+    max-width: 100%;
+}
+.wrapper {
+    width: 128rem;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.white{
+    color: #fff;
+}
+._margin-130-75{
+    margin: 13rem 0 7.5rem;
+}
+._margin-162-66{
+    margin: 16.2rem 0 6.6rem;
+}
+._margin-130-110{
+    margin: 13rem 0 11rem;
+}
+._margin-top-15{
+    margin-top: 1.5rem;
+}
+._margin-top-20{
+    margin-top: 2rem;
+}
+._margin-top-25{
+    margin-top: 2.5rem;
+}
+._margin-top-30{
+    margin-top: 3rem;
+}
+._margin-top-35{
+    margin-top: 3.5rem;
+}
+._margin-top-40{
+    margin-top: 4rem;
+}
+._margin-top-45{
+    margin-top: 4.5rem;
+}
+._margin-top-50{
+    margin-top: 5rem;
+}
+._margin-top-70{
+    margin-top: 7rem;
+}
+._margin-50{
+    margin: 5rem 0;
+}
+._margin-40{
+    margin: 4rem 0;
+}
+._margin-30{
+    margin: 3rem 0;
+}
+._margin-20{
+    margin: 2rem 0;
+}
+._margin-20{
+    margin: 2rem 0;
+}
+._margin70-50{
+    margin: 7rem 0 5rem;
+}
+._margin-bottom-312px{
+    margin-bottom: 31.2rem;
+}
+._margin-top-10{
+    margin-top: 1rem;
+}
+._margin-top-100{
+    margin-top: 10rem;
+}
+._height104{
+    height: 104%;
+}
+._width122{
+    width: 122%;
+}
+._width130{
+    width: 130%;
+}
+._width65{
+    width: 65%;
+}
+._width85{
+    width: 85%;
+}
+._width380{
+    width: 380%;
+}
+._padding0{
+    padding: 0;
+}
+.BOLD{
+    text-transform: uppercase;
+    font-family: "Arial Narrow - Bold";
+}
+._text-transform-uppercase{
+    text-transform: uppercase;
+}
+// подчеркивание текста
+._underline{
+    text-decoration: underline; 
+}
+// нужен для переноса строки с разрешения 767
+.mobail{
+    display: none;
+    line-height: 0;
+}
+// ._none{  
+// } //необходим для отключения текста в мобилке ниже 85rem
+// нужен для переноса строки в карточках "предлагаем инструменты маркетинга" и отключается на 320-599px
+.mobail1{
+    line-height: 0;
+}
+.lb-close{
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    z-index: 11;
+    cursor: pointer;
+    font-size: 2.2rem;
+}
+.lb-nav a.lb-next{
+    display: block;
+    opacity: 1;
+    z-index: 12;
+}
+.lb-nav a.lb-prev{
+    display: block;
+    opacity: 1;
+    z-index: 12;
+
+}
+.lb-data .lb-details{
+    display: none;
+}
+.bold-one{
+  font-family: "Arial Narrow - Bold";
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+._agency-container {
+    width: 123.2rem;
+    margin: 0 auto;
+}
+
+._text-bold {
+    font-family: "Arial Narrow - Bold";
+    font-size: 1.8rem;
+}
+._text-bold-italic {
+    font-family: "Arial Narrow - Bold";
+    font-size: 1.8rem;
+    font-style: italic;
+}
+
+._flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+.text-decoration {
+    text-decoration: none;
+    color: #000000;
+}
+.header {
+    margin-top: 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo {
+        width: 27rem;
+    }
+}
+.header-menu {
+    // max-width: 100%;
+    width: 45rem;
+    list-style-type: none;
+    &__text {
+        text-decoration: none;
+        color: #595959;
+        font-family: "Calibri";
+        font-size: 1.4rem;
+        padding: 1rem;
+        font-weight: 700;
+        line-height: 2.84rem;
+        text-transform: uppercase;
+    }
+}
+
+.header-call {
+    width: 12.3rem;
+    &__number {
+        color: #ff0000;
+        font-family: "Arial - Bold Italic MT";
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1.8rem;
+        text-transform: uppercase;
+        /* Text style for "+7(8452) 9" */
+        letter-spacing: 0.02rem;
+        text-decoration: none;
+        white-space:nowrap;
+    }
+}
+.header-email {
+    color: #666666;
+    font-family: "Arial - Bold Italic MT";
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 0 1rem;
+    line-height: 1.8rem;
+    text-decoration: underline;
+    /* Text style for "i, nfo@za-" */
+    letter-spacing: 0.2rem;
+}
+.cla{
+    position: absolute;
+    right: -3px;
+    top: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+.menu-drop{
+    list-style: none;
+    display: none;
+    position: absolute;
+    z-index: 2;
+    background: #f7f4f4;
+    width: 19rem;
+    padding: 1rem;
+    &_link{
+        padding: 0.7rem;
+        font-family: "CalibriReg";
+        font-size: 1.3rem;
+        color: rgba(0, 0, 0, 0.661);
+        a{
+            color: #000;
+            text-decoration: none;
+        }
+    }
+    &_link:hover{
+        color: #000;
+    }
+    &.active{
+        display: block;
+    }
+    
+}
+
+.header-menu__item_active{
+    position: relative;
+}
+
+
+/* button */
+.menu-btn{
+    width: 5rem;
+    height: 5rem;
+    position: relative;
+    z-index: 11;
+    overflow: hidden;
+    display: none;
+    
+}
+
+.menu-btn span{
+    position: absolute;
+    width: 5rem;
+    height: 0.5rem;
+    background: #898989;
+    border-radius: 0.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s;
+}
+.menu-btn span:nth-of-type(2){
+    top: calc(50% - 1.1rem);
+}
+.menu-btn span:nth-of-type(3){
+    top: calc(50% + 1.1rem);
+}
+.menu-btn.active span:first-of-type{
+    transform: translate(100%);
+
+}
+.menu-btn.active span:nth-of-type(2){
+    top: calc(50% - 0.2rem);
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #000;
+    width: 3rem;
+    height: 0.4rem;
+
+}
+.menu-btn.active span:nth-of-type(3){
+    top: calc(50% - 0.2rem);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    background: #000;
+    width: 3rem;
+    height: 0.4rem;
+}
+/* /button*/
+.swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-banner {
+    width: 100%;
+    overflow: hidden;
+}
+.swiper-wrapper{
+    display: flex;
+}
+#swiper-banner {
+    height: 100%;
+    margin-top: 2.8rem;
+}
+#swiper-slide__banner img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#swiper-slide__banner_media720,
+#swiper-slide__banner_media480,
+#swiper-slide__banner_media360{
+    display: none;
+}
+#swiper-slide__banner_media720 img,
+#swiper-slide__banner_media480 img,
+#swiper-slide__banner_media360 img{
+    width: 100%;
+}
+.swiper-pagination-banner{
+    text-align: center;
+}
+.logo-banner__img_media720,
+.logo-banner__img_media480,
+.logo-banner__img_media360{
+    display: none;
+    width: 100%;
+}
+//слайдер для брендбука
+.brandbook-swiper{
+    width: 93.6rem;
+    max-height: 50.8rem;
+    // width: 100%;
+    overflow: hidden;
+    position: relative;
+    .swiper-slide{
+        background: #edecec;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+.swiper-slide-brandbook{
+    max-width: 71.3rem;
+    width: 100%;
+    padding: 0 2rem;
+    &1{
+        max-width: 40rem;
+        width: 100%;
+        padding: 0 2rem;
+    }
+}
+// баннеры
+.logo-banner {
+    margin-top: 3rem;
+
+    &__img {
+        width: 100%;
+    }
+    &__text{
+        margin-top: 6rem;
+        opacity: 1;
+        fill: #333333;
+        font-family: "Calibri";
+        font-style: italic;
+        font-size: 1.8rem;
+    }
+    &__page-text{
+        font-family: "Arial - Bold Italic MT";
+        font-style: italic;
+        font-size: 1.8rem;
+    }
+}
+.homepage{
+    font-family: "Arial - Italian";
+    color: #000;
+    font-size: 1.8rem;
+    text-decoration: none
+}
+.seo-text {
+    color: #333333;
+    font-family: "Arial Narrow";
+    font-size: 1.4rem;
+    font-style: italic;
+    line-height: 3.8rem;
+    text-align: right;
+    /* Text style for "Маркетинго" */
+    letter-spacing: 0.03rem;
+    margin-top: 4.7rem;
+}
+
+.content {
+    margin-top: 4.4rem;
+    &__wrap{
+        max-width: 52rem;
+    }
+    &__wrap2{
+        max-width: 62.2rem;
+        width: 100%;
+        line-height: 2.8rem;
+    }
+    &__title {
+        color: #333;
+        font-family: "Myriad Pro - Bold Cond";
+        font-size: 3.6rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: -0.1rem;
+    }
+    &__img{
+        max-width: 100%;
+        width: 30rem;
+    }
+    &-list {
+        margin-top: 4.4rem;
+    }
+    &-list__text{
+        font-family: "Myriad Pro - Cond";
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 2.5rem;
+        &5{
+            font-family: "Myriad Pro - Cond";
+            text-transform: uppercase;
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: 3.5rem;
+            width: 56rem;
+            max-width: 100%;
+        }
+        &6 {
+            font-family: "Myriad Pro - Bold Cond";
+            font-size: 2.4rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.02rem;
+            line-height: 3rem;
+            width: 29rem;
+        }
+    }
+    &-list__text1 {
+        color: #000000;
+        font-family: "Myriad Pro - Bold Cond";
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        /* Text style for "С, амое ва" */
+        letter-spacing: 0.02rem;
+        line-height: 3rem;
+    }
+    &-list__text2 {
+        color: #080808;
+        font-family: "Myriad Pro - Bold Cond";
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.4rem;
+        text-transform: uppercase;
+    }
+    &-list__text3 {
+        color: #080808;
+        font-family: "Arial Narrow";
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 3.7rem;
+        /* Text style for "П, редлага" */
+        letter-spacing: 0.035rem;
+        a{
+            font-style: italic;
+        }
+    }
+    &-list__text4{
+            color: #080808;
+            font-family: "Arial Narrow";
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: 3.5rem;
+            letter-spacing: 0.035rem;
+    }
+    &-logo__right-text2{
+        color: #2323cf;
+        font-style: italic;
+    }
+}
+
+._black{
+    color: #000;
+}
+.services {
+    &__wrap{
+        display: flex;
+        flex-direction: column;
+    }
+    &__wrapper{
+        display: flex;
+        align-items: center;
+    }
+    &:not(:first-child) {
+        margin-top: 2rem;
+    }
+    &__text {
+        color: #333333;
+        font-family: "Myriad Pro - Bold Cond";
+        font-size: 2.4rem;
+        font-weight: 400;
+        line-height: 4rem;
+        text-decoration: underline;
+        text-transform: uppercase;
+        display: block;
+        width: 30.5rem;
+        /* Text style for "разработка" */
+        letter-spacing: 0.064rem;
+        &_title{
+            text-decoration: none;
+        }
+    }
+    &__link{
+        font-size: 2.5rem;
+        font-style: italic;
+    }
+    
+    #swiper-logo{
+        width: 100%;
+        margin-top: 4rem;
+        overflow: hidden;
+        }
+        #swiper-logo__container {
+            display: flex;
+            align-items: center;
+        }
+        #swiper-slide__logo {
+        text-align: center;
+        font-size: 1.8rem;
+        /* Center slide text vertically */
+        display: flex;
+        justify-content: center;
+        }
+        #slider-slide__logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        }
+        .swiper-pagination{
+            position: absolute;
+            top: 13.8rem;
+        }
+    &__logo {
+        max-width: 97rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        div{
+                margin: 0 1rem;
+            }
+    }
+    &__logo-img {
+        max-width: 29.5rem;
+        width: 100%;
+        max-height: 29rem;
+    }
+}
+._none{
+    text-decoration: none;
+}
+._text {
+    text-decoration: none;
+}
+
+
+// слайдер логотипов
+#brick-img {
+    max-width: 11.8rem;
+    width: 100%;
+    max-height: 10rem;
+} 
+
+#kriz-img {
+    max-width: 13.6rem;
+    width: 100%;
+    max-height: 60.5rem;
+}
+
+#pc-img {
+    max-width: 16.3rem;
+    width: 100%;
+    max-height: 3.5rem;
+}
+
+#vet-img {
+    max-width: 16.1rem;
+    width: 100%;
+    max-height: 4.6rem;
+}
+
+#int-img {
+    max-width: 15.8rem;
+    width: 100%;
+    max-height: 4rem;
+}
+
+#sarbk-img {
+    max-width: 16.1rem;
+    width: 100%;
+    max-height: 6rem;
+}
+
+#trans-img {
+    max-width: 16.1rem;
+    width: 100%;
+    max-height: 10rem;
+}
+
+#jaso-img {
+    max-width: 14.1rem;
+    width: 100%;
+    max-height: 10rem;
+}
+
+#okno-img {
+    max-width: 16.1rem;
+    width: 100%;
+    max-height: 8rem;
+}
+
+#podshipnik-img {
+    width: 100%;
+    max-width: 60%;
+}
+
+#dental-img {
+    max-width: 16.1rem;
+    width: 100%;
+    max-height: 4.6rem;
+}
+
+#briik-img {
+    max-width: 16.1rem;
+    width: 100%;
+    max-height: 4.6rem;
+}
+
+#agava-img {
+    max-width: 16.1rem;
+    width: 100%;
+    max-height: 4.6rem;
+}
+
+#profi-img {
+    max-width: 13.6rem;
+    width: 100%;
+    max-height: 7rem;
+}
+
+#sari-img {
+    max-width: 10.6rem;
+    width: 100%;
+    max-height: 10rem;
+}
+
+#geodor-img {
+    max-width: 16.1rem;
+    width: 100%;
+    max-height: 4.6rem;
+}
+
+#spec-img {
+    max-width: 13.6rem;
+    width: 100%;
+    max-height: 60.5rem;
+}
+
+#sun-img {
+    max-width: 6.5rem;
+    width: 100%;
+    max-height: 10rem;
+}
+
+#memory-img {
+    max-width: 13.6rem;
+    width: 100%;
+    max-height: 4.5rem;
+}
+
+#tisn-img {
+    max-width: 13.6rem;
+    width: 100%;
+    max-height: 60.5rem;
+}
+
+#byket-img {
+    max-width: 16.1rem;
+    width: 100%;
+    max-height: 4.6rem;
+}
+.agency {
+    margin-top: 6.3rem;
+    &__content {
+        margin-top: 4.3rem;
+        &__img{
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__content-banner {
+        max-width: 100%;
+        width: 84rem;
+        margin-bottom: 1rem;
+    }
+    &__content_text {
+        width: 30.3rem;
+        font-family: "Arial Narrow";
+        font-size: 1.6rem;
+        font-style: normal;
+        letter-spacing: 0.3.5rem;
+        line-height: 2.8rem;
+        &:not(:first-child) {
+            margin-top: 2.9rem;
+        }
+    }
+    &__content_text-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    &__content_text-uppercase {
+        color: #080808;
+        font-family: "Arial Narrow - Bold";
+        font-size: 2.2rem;
+        font-weight: 700;
+        letter-spacing: 0.3.5rem;
+        line-height: 2.3rem;
+    }
+    &__info {
+        margin-top: 2.7rem;
+    }
+
+    &__info-text-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1.3rem;
+        min-width: 26.3rem;
+    }
+
+    &__info-text {
+        max-width: 30rem;
+        font-family: "Arial Narrow";
+        font-size: 1.6rem;
+        font-style: normal;
+        letter-spacing: 0.035rem;
+        line-height: 2.5rem;
+
+        &:not(:first-child) {
+            margin-top: 4rem;
+        }
+    }
+
+    &__info-text-uppercase {
+        color: #080808;
+        font-family: "Arial Narrow - Bold";
+        font-weight: 700;
+        letter-spacing: 0.035rem;
+        line-height: 2.3rem;
+        text-transform: uppercase;
+    }
+}
+  .carousel-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 35rem;
+    background: #f2f4f5;
+    min-width: 0;
+    padding: 4rem 3rem;
+    box-shadow: 0 0 1rem 0.2rem #b3b3b3;
+    height: 66rem;
+    margin: 1rem 0;
+  }
+  #btn-open{
+    border: none;
+  }
+  
+
+  .swiper-button-prev::after{
+    color: #999;
+    left: 1rem;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .swiper-button-next::after{
+    color: #999;
+    right: 1rem;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .swiper-pagination-about-us{
+    text-align: center;
+  }
+  .swiper-slide{
+    width: 100%;
+  }
+.class{
+    height: 8rem;
+    display: flex;
+    align-items: center;
+}
+.about-us{
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        margin: 12.5rem 0 17rem;
+    }
+    &__img{
+        width: 100rem;
+        max-width: 100%;
+        &1{
+            width: 23rem;
+            max-width: 100%;
+        }
+    }
+    &__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 22rem;
+    }
+    &-wrap {
+        width: 35rem;
+        max-height: 65.8rem;
+        padding: 3.5rem 0;
+        background-color: #f2f4f5;
+        display: flex;
+        flex-direction: column;
+        margin: 0 3.5rem;
+        &__logo {
+            max-width: 14.1rem;
+            min-height: 4rem;
+            max-height: 7.2rem;
+            width: 100%;
+        }
+          &__img {
+            max-width: 19.6rem;
+            width: 100%;
+          }
+          &__text {
+            font-family: "Arial Narrow";
+            font-size: 1.6rem;
+            line-height: 2rem;
+            height: 16rem;
+          }
+          &__author {
+            font-family: "Arial - Italian";
+            font-size: 1.4rem;
+          }
+      }
+      
+}
+.min-img{
+    max-width: 19.6rem;
+    width: 100%;
+}
+.contacts{
+    width: 89rem;
+    &-content{
+        &_left{
+            width: 32rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+    }
+    &_img{
+        max-width: 100%;
+        width: 37rem;
+    }
+    &_center{
+        background: #000099;
+        width: 40.5rem;
+        height: 46.6rem;
+        max-width: 100%;
+        color: #fff;
+    }
+}
+.contacts{
+    &_center{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    &__title{
+        font-family: "Myriad Pro - Bold Cond";
+        font-size: 2.4rem;
+        text-transform: uppercase;
+    }
+    &__address{
+        font-family: "Arial - Italian";
+        font-size: 2rem;
+    }
+    &__email{
+        font-family: "Arial - Italian";
+        font-size: 2rem;
+    }
+    &__web{
+        font-family: "Arial - Italian";
+        font-size: 2rem;        
+    }
+    &__phone{
+        font-family: "Arial - Italian";
+        font-size: 2rem;     
+    }
+}
+.footer{
+    background: #d1d1d1;
+    max-width: 100%;
+    margin-top: 12.2rem;
+    &-text{
+        display: flex;
+        flex-direction: column;
+        font-family: "Arial Narrow - Bold";
+        text-transform: uppercase;
+        justify-content: space-between;
+        line-height: 2.8rem;
+        font-size: 1.4rem;
+        height: 90%;
+        color: #000;
+    }
+    &__container{
+        font-family: "Arial Narrow";
+        color: #000;
+        display: flex;
+        align-items: center;
+        height: 27.5rem;
+    }
+    &-info{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+        font-weight: 700;
+        &__title{
+            text-transform: uppercase;
+            font-family: "Arial Narrow - Bold";
+            font-size: 1.4rem;
+        }
+        &__number{
+            color: #000;
+            text-decoration: none;
+            font-family: "Arial Narrow - Bold";
+            font-size: 2.4rem;
+            &1{
+                color: #000;
+                text-decoration: none;
+                font-family: "Arial Narrow - Bold";
+                font-size: 2.4rem;
+                display: none;
+            }
+        }
+        &__email{
+            color: #000;
+            font-family: "Arial Narrow - Bold";
+            font-size: 1.8rem;
+        }
+        &__text{
+            font-family: "Arial Narrow - Bold";
+            font-size: 1.8rem;
+        }
+    }
+    &-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        font-size: 1.2rem;
+        list-style: none;
+        &__text{
+            text-decoration: none;
+            color: #000;
+            text-transform: uppercase;
+            font-family: "Arial Narrow - Bold";
+            font-size: 1.2rem;
+        }
+    }
+
+    &-copyright{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-evenly;
+        &__img{
+            max-width: 25rem;
+            width: 100%;
+        }
+        &__text{
+            color: $color-gre;
+            font-family: "CalibriReg";
+            font-size: 1.4rem;
+
+        }
+    }
+}
+.wrap{
+    display: flex;
+    justify-content: space-around;
+    max-width: 128rem;
+    width: 100%;
+    height: 15rem;
+    align-items: flex-start;
+}
+.carousel-wrapper{
+    display: flex;
+    align-items: center;
+} 
+.carousel{
+    overflow: hidden;
+
+}
+//  ДРУГОЙ КОД
+.logo-banner__text3 {
+    opacity: 1;
+    fill: #333333;
+    font-family: "Calibri";
+    font-style: normal;
+    font-size: 1.7rem;
+    margin-top: 2rem;
+    line-height: 3rem;
+}
+.logo-banner__text2 {
+    opacity: 1;
+    fill: #333333;
+    font-family: "Calibri";
+    font-style: normal;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    line-height: 3.7rem;
+}
+.podshipnik {
+    margin-top: 7.5rem;
+    &-logo {
+        margin-top: 5rem;
+        &__images{
+            div{
+                margin: 0 2rem 2rem 0 ;
+            }
+            &__image {
+                max-width: 100%;
+                max-height: 100%;
+                width: 63.1rem;
+            }
+        }
+        &__right-text2{
+            font-style: italic;
+        }
+    }
+    
+    &__content {
+        margin-top: 7rem;
+        &-left{
+            padding: 0 7rem;
+            display: flex;
+            align-items: center;
+            &_img{
+                max-width: 45rem;
+                width: 100%;
+            }
+        }
+        &-right {
+            max-width: 63.2rem;
+            width: 100%;
+            &_title {
+                color: #000000;
+                font-family: "Myriad Pro - Bold Cond";
+                font-size: 3.2rem;
+                font-weight: 400;
+                text-transform: uppercase;
+                letter-spacing: 0.04rem;
+                line-height: 4rem;
+            }
+            &_text {
+                margin-top: 3.5rem;
+                font-family: "Arial Narrow";
+                font-size: 1.8rem;
+                line-height: 3rem;
+            }
+        }
+    }
+}
+._kriz{
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+._max-width460{
+    max-width: 46;
+}
+._max-width520{
+    max-width: 52rem;
+}
+.bikson-image{
+    width: 100%;
+    padding: 0;
+    padding-right: 2rem;
+    margin-bottom: 2rem;
+}
+.bikson-style-logo__images:not(:first-child) {
+    margin-top: 2rem;
+}
+.bikson-style-logo__images-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 61rem;
+    width: 100%;
+}
+.bikson-style-logo__images__image1 {
+    max-width: 16rem;
+    width: 100%;
+}
+.bikson-style-logo__images-text1:not(:first-child) {
+    margin-top: 2.7rem;
+}
+.bikson-style-logo__images-text1 {
+    color: #000000;
+    font-family: "Arial Narrow";
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.04rem;
+    line-height: 3.3rem;
+}
+.bikson-logo__images div{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.french-press__link {
+    margin-top: 8.5rem;
+    &-text {
+        color: #0000CC;
+        text-decoration: none;
+        font-family: "Myriad Pro - Bold Cond";
+        font-size: 2.1rem;
+        line-height: 3.5rem;
+        text-transform: uppercase;
+    }
+}
+.common {
+    margin-top: 6rem;
+    &__title {
+    color: #000000;
+    font-family: "Myriad Pro - Bold Cond";
+    font-size: 3.3rem;
+    font-weight: 400;
+    line-height: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.076rem;
+    }
+}
+.common-wrapper {
+    margin-top: 5rem;
+}
+
+.common-content_left {
+    max-width: 60rem;
+    &__bold-text1 {
+        color: #000000;
+        font-family: "Myriad Pro - Bold Cond";
+        font-size: 1.9rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.03rem;
+        line-height: 3.2rem;
+    }
+    &__text {
+        color: #000000;
+        font-family: "Myriad Pro - Cond";
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.04rem;
+        line-height: 4.5rem;
+    }
+    &__bold-text2 {
+        color: #000000;
+        font-family: "Myriad Pro - Bold Cond";
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.04rem;
+    }
+    &__bold-text3 {
+        color: #000000;
+        font-family: "Myriad Pro - Bold Cond";
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.04rem;
+    }
+    &__img{
+        width: 45rem;
+    }
+}
+.common-content_right {
+    max-width: 62rem;
+    &__text {
+        font-family: "Arial Narrow";
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+        &2{
+            font-family: "Arial Narrow";
+            font-size: 1.8rem;
+            line-height: 2.6rem;
+        }
+    }
+}
+
+.common-container {
+    margin-top: 7rem;
+}
+
+.common-images {
+    position: relative;
+    margin: 2rem 2rem 0 0;
+    &_black{
+        background: black;
+        position: absolute;
+        opacity: .5;
+        top: 0;
+        left: 0;
+        display: none;
+        height: 100%;
+        width: 100%;
+    }
+    &:hover .common-images__image-text1 {
+        display: block;
+    }
+    &:hover .common-images__image-text2 {
+        display: block;
+    }
+    &:hover .common-images__image-title {
+        display: block;
+    }
+    &:hover .common-images__image-link {
+        display: block;
+    }
+    &:hover .common-images_black {
+        display: block;
+    }
+    &__image1 {
+        width: 60.5rem;
+        max-width: 100%;
+        &:hover .common-images__image-text1 {
+            display: block;
+        }
+        &:hover .common-images__image-link {
+            display: block;
+        }
+        &:hover .common-images_black {
+            display: block;
+        }
+    }
+    &__image{
+        &-title{
+            color: #ffffff;
+            font-size: 3rem;
+            font-family: "Arial Narrow - Bold";
+            text-transform: uppercase;
+            display: none;
+            line-height: 3.5rem;
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+            width: 45rem;
+        }
+        &-text{
+            &1{
+                color: #ffffff;
+                font-size: 1.6rem;
+                font-family: "Arial Narrow";
+                text-transform: uppercase;
+                display: none;
+                line-height: 3rem;
+                position: absolute;
+                top: 62%;
+                left: 50%;
+                transform: translate(-50% , -50%);
+                width: 45rem;
+            }
+            &2{
+                color: #ffffff;
+                font-size: 1.8rem;
+                font-family: "Arial Narrow - Bold";
+                text-transform: uppercase;
+                display: none;
+                line-height: 3rem;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50% , -50%);
+                width: 44rem;
+            }
+        }
+        &-link {
+            color: #ffffff;
+            font-size: 1.8rem;
+            font-family: "Arial Narrow - Bold";
+            text-transform: uppercase;
+            display: none;
+            line-height: 3rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+            width: 44rem;
+            text-decoration: underline;
+        }
+    }
+}
+
+.content-logo {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+.content-logo__left {
+    display: flex;
+    flex-direction: column;
+}
+.content-logo__left-img {
+    width: 15.1rem;
+    height: 11.7rem;
+}
+.content-logo__left-text1 {
+    width: 18rem;
+    margin-top: 2.3rem;
+    color: #333333;
+    font-family: "Myriad Pro - Bold Cond";
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+}
+.content-logo__left-text2 {
+    color: #333333;
+    font-family: "Calibri - Bold";
+    font-style: italic;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-top: 4rem;
+}
+.content-logo__right-text {
+    max-width: 95.6rem;
+    font-family: "Arial Narrow";
+    font-size: 1.8rem;
+    opacity: 1;
+    color: #080808;
+    line-height: 2.8rem;
+}
+.logo {
+    margin: 1rem 0;
+    display: flex;
+    div{
+        margin: 0 0.5rem;
+    }
+    &-img {
+        width: 30rem;
+        max-width: 100%;
+    }
+    &-container {
+        margin-top: 6.7rem;
+    }
+
+}
+.articles {
+    margin-top: 10rem;
+
+    &__title {
+    color: #333333;
+    font-family: "Myriad Pro - Bold Cond";
+    font-size: 2.6rem;
+    font-weight: 400;
+    line-height: 2.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.064rem;
+    }
+
+    &__content {
+        margin-top: 4.3rem;
+    }
+
+    &__container {
+        background: #ECEFEF;
+        width: 30rem;
+        height: 30rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        &-img1 {
+            width: 19.7rem;
+            height: 13.2rem;
+            margin-top: 3.7rem;
+        }
+
+        &-title {
+            color: #333333;
+            font-family: "Calibri - Bold";
+            font-style: italic;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.4rem;
+            text-transform: uppercase;
+            text-decoration: underline;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        &-text {
+            color: #000000;
+            font-family: "Arial Narrow";
+            font-size: 1.6rem;
+            text-align: center;
+
+            margin-top: 2rem;
+            line-height: 1.8rem;
+        }
+
+        &-img2 {
+            width: 13.9rem;
+            height: 14.2rem;
+        }
+
+        &-img3 {
+            width: 22rem;
+            height: 7rem;
+        }
+
+        &-img4 {
+            width: 19rem;
+            height: 7.7rem;
+        }
+    }
+}
+._brown{
+    background: #514949;
+}
+.articles__container{
+    &-title2{
+        font-family: "Myriad Pro - Bold Cond";
+        font-size: 2.4rem;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 3.5rem;
+    }
+    &-text2{
+        font-family: "Myriad Pro - Bold Cond";
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 2.5rem;
+        width: 19.5rem;
+    }
+    
+}
+.advantages{
+    margin-top: 9.6rem;
+    &-content{
+        display: flex;
+        margin-top: 6rem;
+    }
+    &-left{
+        width: 30rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    &__text{
+        font-family: "Arial Narrow";
+        font-size: 1.8rem;
+        line-height: 3.5rem;
+        letter-spacing: 0.05rem;
+        font-weight: 400;
+        max-width: 96.5rem;
+        width: 100%;
+    }
+    &-rigth{
+        margin-left: 4rem;
+    }
+}
+.dropbtn {
+    width: 20rem;
+    padding: 1.2rem 0;
+    margin: 0 auto;
+    margin-top: 2rem;
+    background: #E1E5E5;
+    border: none;
+    border-radius: .3rem;
+    cursor: pointer;
+    display: block;
+    font-family: "Arial Narrow";
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+.dropbtn:hover {
+    color: #ffffff;
+    transition: 0.3s;
+}
+.logo-container {
+    margin-top: 6.7rem;
+}
+.services-page {
+    margin-top: 5rem;
+
+    &__title {
+        color: #000000;
+        font-family: "Myriad Pro - Bold Cond";
+        font-size: 3.2rem;
+        font-weight: 400;
+        line-height: 3.1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.076rem;
+        margin-top: 4.5rem;
+    }
+}
+.services-page__content {
+    margin-top: 3.5rem;
+
+    &-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 65rem;
+    }
+
+    &-left_img {
+        width: 54.1rem;
+    }
+
+    &-right {
+        max-width: 63.2rem;
+    }
+    &-right_title {
+        color: #000000;
+        font-family: "Myriad Pro - Bold Cond";
+        font-size: 3.2rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.04rem;
+        line-height: 3.2rem;
+    }
+    &-right_text { //отключится на 767px
+        margin-top: 3.5rem;
+        font-family: "Arial Narrow";
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        &2{
+            font-family: "Arial Narrow";
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+        }
+        &3{ //отключится на 500px
+            font-family: "Arial Narrow";
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+        }
+    }
+    &-title {
+        color: #000000;
+        font-family: "Myriad Pro - Bold Cond";
+        font-size: 3.6rem;
+        font-weight: 400;
+        line-height: 3.1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.076rem;
+    }
+    &-line {
+        height: 1.2rem;
+        width: 100%;
+        border-bottom: .4rem solid #999999;
+        margin-left: 2rem;
+    }
+}
+.branding {
+    margin-top: 7rem;
+    &1{
+        margin-top: 4.5rem;
+    }
+    a{
+        font-style: italic;
+    }
+    &-left{
+        width: 31.6rem;
+        &__img{
+            width: 12rem;
+        }
+    }
+    &-left__title {
+        color:#333333;
+        font-family:"Myriad Pro - Bold Cond";
+        font-size:1.8rem;
+        text-transform: uppercase;
+        line-height: 3.4rem;
+    }
+    &-left__text {
+        width: 31.6rem;
+        color:#080808;
+        font-family:"Arial Narrow";
+        font-size:1.6rem;
+        margin-top: 2.5rem;
+        line-height: 2.9rem;
+        &-none{
+            width: 31.6rem;
+            color:#080808;
+            font-family:"Arial Narrow";
+            font-size:1.6rem;
+            line-height: 2.9rem;
+        }
+        &1{
+            margin: 0;
+            color:#080808;
+            font-family:"Arial Narrow";
+            font-size:1.6rem;
+            line-height: 3.5rem;
+        }
+        &_v2{
+            width: 31.6rem;
+            color:#080808;
+            font-family:"Arial Narrow";
+            font-size:1.6rem;
+            line-height: 2.9rem;
+        }
+    }
+    &-right {
+        max-width: 93rem;
+        & div{
+            margin: 1rem;
+        }
+        &__img {
+            max-width: 30rem;
+            max-height: 30rem;
+            width: 100%;
+            &-max{
+                width: 95rem;
+                height: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}
+.bikson-logo__images-text {
+    color: #000000;
+    font-family: "Myriad Pro - Bold Cond";
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.02rem;
+    line-height: 3.4rem;
+    margin-left: 2.5rem;
+}
+.french-press__grid {
+    display: flex;
+    flex-direction: column;
+    .french-press__logos-forms{
+        margin: 0; 
+    }
+}
+.french-press__logos-forms {
+    width: 61.1rem;
+    & div:last-child{
+        margin: 0;
+    }
+    &__image {
+        width: 30.5rem;
+        height: 30.5rem;
+        max-width: 100%;
+    }
+}
+.french-press__label {
+    margin-top: 12rem;
+    &-left {
+        display: flex;
+        flex-direction: column;
+        &__title {
+            color: #000000;
+            font-family: "Myriad Pro - Bold Cond";
+            font-size: 3.3rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.04rem;
+            line-height: 3.2rem;
+            &:not(:first-child) {
+                margin-top: 3rem;
+            }
+        }
+        &__text {
+            margin-top: 3rem;
+            font-family: "Arial Narrow";
+            font-size: 1.8rem;
+            line-height: 2.7rem;
+        }
+        &_images {
+            margin-top: 4.5rem;
+            display: flex;
+        }
+        &_flex{
+            display: flex;
+            align-items: center;
+        }
+    }
+    &-right__image {
+        max-width: 65rem;
+        max-height: 69rem;
+        width: 100%;
+    }
+}
+.brandbook-content_right__text {
+    font-family: "Arial Narrow";
+    max-width: 56rem;
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+._margin-top-25{
+    margin-top: 2.5rem;
+}
+._margin-top-15{
+    margin-top: 1.5rem;
+}
+.price{
+    margin-top: 5rem;
+    &-left{
+        max-width: 65rem;
+        width: 100%;
+    }
+    &-right{
+        max-width: 63.2rem;
+        width: 100%;
+        text-align: center;
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    &__conteiner{
+        width: 25.3rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__a{
+        font-style: italic;
+        font-weight: 400;
+        font-family: "Arial Narrow";
+
+    }
+    &__title{
+        font-family: "Myriad Pro - Bold Cond";
+        font-size: 2rem;
+        text-transform: uppercase;
+        &1{
+            font-family: "Arial Narrow - Bold";
+            font-size: 1.8rem;
+        }
+    }
+    &__text{
+        font-family: "Arial Narrow";
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+        &2{
+            font-family: "Arial Narrow";
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+        }
+    }
+    &__line{
+        max-width: 50.9rem;
+        width: 100%;
+        border-bottom: .3rem solid #666;
+        &-mini{
+            max-width: 18.3rem;
+            width: 100%;
+            border-bottom: .3rem solid #666;
+        }
+        &-text{
+            font-family: "Arial - Italian";
+            font-size: 1.4rem;
+            line-height: 2.1rem;
+        }
+    }
+    &__left{
+        max-width: 29.3rem;
+        width: 100%;
+        height: 83rem;
+        background: #f2f4f5;
+        box-shadow: 0 0 1.8rem 0.5rem #858484;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__right{
+        max-width: 29.3rem;
+        width: 100%;
+        height: 83rem;
+        background: #f2f4f5;
+        box-shadow: 0 0 1.8rem 0.5rem #858484;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+@media (max-width:1024px){
+    .header{
+        &-menu__text{
+            line-height: 2.2rem;
+        }
+    }
+    .cla{
+        font-size: 1.2rem;
+    }
+    .content{
+        &-list{
+            &__text{
+                font-size: 1.6rem;
+                line-height: 2rem;
+                &3{
+                    line-height: 2.8rem;
+                }
+                &4{
+                    line-height: 2.8rem;
+                }
+            }
+        }
+        &__title{
+            font-size: 3rem;
+        }
+        &-logo{
+            &__left{
+                &-text{
+                    &1{
+                        font-size: 1.6rem;
+                        line-height: 2.7rem;
+                    }
+                    &2{
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+            &__right{
+                &-text{
+                    max-width: 76rem;
+                    font-size: 1.57rem;
+
+                }
+            }
+        }
+    }
+    .services{
+        &__text{
+            font-size: 2.1rem;
+            width: 21.5rem;
+        }
+        &__link{
+            font-size: 2.1rem;
+        }
+        &-page__content-right {
+            max-width: 49.2rem;
+        }
+    }
+    .branding{
+        &-left{
+            &__text{
+                    line-height: 2rem;
+                    width: 29.6rem;
+                &1{
+                    line-height: 2.3rem;
+                    width: 29.6rem;
+                }
+            }
+        }
+    }
+    .articles{
+        &__container{
+            &:first-child{
+                margin: 0;
+            }
+            margin-left: 1rem;
+            &-text{
+                font-size: 1.4rem;
+            }
+            &-title{
+                font-size: 1.4rem;
+            }
+        }
+    }
+    .advantages{
+        &__text{
+            line-height: 2.8rem;
+        }
+    }
+    .common{
+        &-content{
+            &_left{
+                max-width: 46rem;
+                &__text{
+                    font-size: 1.6rem;
+                }
+            }
+            &_right{
+                max-width: 48rem;
+            }
+        }
+        &-images{
+            &__image{
+                &-title{
+                    top: 40%;
+                }
+            }
+        }
+    }
+    .podshipnik{
+        &__content{
+            &-right{
+                max-width: 50rem;
+                &_title{
+                    font-size: 2.9rem;
+                }
+                &_text{
+                    font-size: 1.6rem;
+                    line-height: 2.8rem;
+                }
+            }
+        }
+    }
+    .bikson{
+        &-style-logo__images__image1{
+            max-width: 10rem;
+        }
+        &-logo__images-text{
+            font-size: 1.5rem;
+        }
+    }
+    .french-press{
+        &__logos-forms{
+            width: 48.1rem;
+            &__image{
+                height: 24rem;
+            }
+        }
+        &__label-left{
+            &__title{
+                font-size: 3rem;
+            }
+            &__text{
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .price{ 
+        &-left{
+            max-width: 48rem;
+        }
+        &__left{
+            max-width: 23rem;
+            height: 105rem;
+        }
+        &__right{
+            max-width: 23rem;
+            height: 105rem;
+        }
+        &__text{
+            font-size: 1.6rem;
+            &2{
+                font-size: 1.4rem;
+            }
+        }
+        &__conteiner{
+            width: 18rem;
+            height: 103rem;
+            justify-content: space-between;
+            .BOLD{
+                font-size: 1.4rem;
+            }
+            .bold-one{
+                font-size: 1.4rem;
+            }
+        }   
+    } 
+}
+@media (max-width:767px) {
+    .border {
+        border-top: .3rem solid #ccc;
+        margin: 0 1.2rem;
+    }
+    .menu-btn {
+        display: block;
+    }
+    .menu-btn.active {
+        top: 0;
+        left: 19.5rem;
+        position: absolute;
+    }
+    nav {
+        overflow: hidden;
+    }
+    .header-menu {
+        position: absolute;
+        transform: translate(-100%, 0);
+        flex-direction: column;
+        width: 25rem;
+        height: 45rem;
+        top: 0;
+        left: 0;
+        transition: 0.5s;
+        background: white;
+        z-index: 2;
+        justify-content: flex-end;
+        &__item {
+            padding: .6rem 0;
+        }
+        &__text {
+            color: #000;
+            font-family: "Arial Narrow - Bold";
+            text-transform: capitalize;
+            padding: 1.3rem;
+        }
+    }
+    .header-menu.active {
+        transform: translate(0);
+        background: #f7f4f4;
+    }
+    .cla {
+        display: none;
+    }
+    .logo-banner__img {
+        display: none;
+        &_media720 {
+            display: block;
+        }
+    }
+    .menu-drop {
+        position: inherit;
+        padding: 0;
+        padding-left: 2.3rem;
+        width: 100%;
+        display: block;
+        &_link {
+            font-size: 1.4rem;
+            padding: .4rem;
+        }
+    }
+    #swiper-slide__banner {
+        display: none;
+        &_media720 {
+            display: block;
+        }
+    }
+    // нужен для span с переносом текста с 767 
+    .mobail{
+        display: block;
+        //отключает span с br
+        &1{ 
+            display: none;
+        }
+    }
+    .homepage{
+        font-size: 1.4rem;
+    }
+    .logo-banner{
+        &__page-text{
+            font-size: 1.4rem;
+        }
+        &__text{
+            margin-top: 4rem;
+        }
+    }
+    .seo-text{
+        margin-top: 2.7rem;
+    }
+    .content{
+        &__title{
+            font-size: 2.6rem;
+        }
+        &-list{
+            margin-top: 3rem;
+        }
+        &__img{
+            display: none;
+        }
+        &-list{
+            display: flex;
+            flex-direction: column;
+            &__text{
+                &3{
+                    display: none;
+                    &_mob-block{
+                        display: block;
+                    }
+                }
+                &2{
+                    display: none;
+                    &_mob-block{
+                        display: block;
+                    }
+                }
+            }
+        }
+        &__wrap2{
+            margin-top: 2rem;
+        }
+        &-logo{
+            margin: 0;
+            flex-direction: column;
+            &__right{
+                &-text{
+                    display: none;
+                }
+            }
+            &__left{
+                &-img{
+                    display: none;
+                }
+                &-text{
+                    &1{
+                        width: 61rem;
+                        font-size: 1.8rem;
+                    }
+                    &2{
+                        font-size: 1.8rem;
+                        margin: 2rem 0;
+                    }
+                }
+
+            }
+        }
+    }
+    ._block{
+        display: block;
+    }
+    ._margin-130-110{
+        margin: 4rem 0;
+    }
+    ._flex-container-mod{
+        display: flex;
+        flex-direction: column;
+    }
+    .services{
+        &__logo{
+            div{
+                margin: 0 .5rem;
+            }
+        }
+        &__text{
+            width: 47rem;
+            &_mod{
+                font-size: 1.9rem;
+                width: 100%;
+                max-width: 24rem;
+            }
+        }
+        &__wrap{
+            flex-direction: row;
+            div{
+                width: 25rem;
+            }
+            div:first-child{
+                display: none;
+            }
+        }
+        &-page{
+            &__content{
+                &-left{
+                    display: none;
+                }
+                &-right{
+                    max-width: 58rem;
+                    &_text{
+                        display: none;
+                    }
+                }
+                &-title{
+                    font-size: 2.6rem;
+                }
+            }
+            &__title{
+                font-size: 2.4rem;
+            }
+        }
+    }
+    .branding{
+        flex-direction: column;
+        margin-top: 2rem;
+        &-left{
+            width: 59rem;
+            &__text{
+                width: 59rem;  
+                margin: 0;
+                &-none{
+                    display: none;
+                }
+                &_v2{
+                    width: 74rem;
+                }
+            }
+        }
+    }
+    .agency{
+        &__info{
+            &-text{
+                max-width: 63rem;
+            }
+        }
+    }
+    .articles{
+        &__content{
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        &__container{
+            margin: 1.5rem 0;
+            &:first-child{
+                margin: 1.5rem 0;
+            }
+        }
+    }
+    .carousel{
+        &-item{
+            max-width: 33rem;
+            padding: 3rem 2rem;
+        }
+    }
+    .common{
+        margin-top: 3rem;
+        &-wrapper{
+            flex-direction: column;
+            margin: 0;
+        }
+        &-content{
+            &_left{
+                max-width: 63rem;
+                &__img{
+                    display: none;
+                }
+            }
+            &_right{
+                max-width: 63rem;
+                &__text{
+                    display:none;
+                }
+            }  
+        }
+        
+        &-container{
+            margin-top: 2rem;
+            .wrapper{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        &-images{
+            margin: 1rem 0;
+        }
+    }
+    .about-us{
+        &__img{
+            &1{
+                display: none;
+            }
+        }
+    }
+    .brandbook{
+        &-content{
+            &_right{
+                &__text{
+                    display: none;
+                }
+            }
+        }
+        &-swiper{
+            width: 73rem;
+            margin-top: 4rem;
+        }
+    }
+    .french{
+        &-press{
+            &__label {
+                margin-top: 3rem;
+                flex-direction: column;
+                &-right{
+                    &__image{
+                        display: none;
+                    }
+                }
+                &-left{
+                    &_images {
+                        margin-top: 2.5rem;
+                        justify-content: space-evenly;
+                    }
+                }
+                &__link {
+                    margin-top: 6.5rem;
+                }
+            }
+            &__logos{
+                &-forms{
+                    width: 63rem;
+                    &__image{
+                        height: 30.5rem;
+                    }
+                }
+            }
+        }
+    }
+    .podshipnik{
+        margin-top: 4.5rem;
+        &__content{
+            margin-top: 3rem;
+            flex-direction: column;
+            &-left{
+                &_img{
+                    display: none;
+                }
+            }
+            &-right{
+                max-width: 65rem;
+            }
+        }
+        &-logo{
+            &__images{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+            } 
+        }
+    }
+    .footer{
+        position: relative;
+        margin-top: 10rem;
+        &-copyright{
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 27rem;
+            bottom: 2rem;
+            height: 0%;
+            &__img{
+                display: none;
+            }
+        }
+        &-info{
+            &__number{
+                &1{
+                    display: block;
+                }
+            }
+            &__text{
+                display: none;
+            }
+        }
+    }
+}
+
+
+@media (max-width:500px){
+    .header{
+        flex-wrap: wrap;
+        height: 12rem;
+        &-call{
+            width: 17rem;
+        }
+    }
+    .seo-text {
+        margin-top: 1.7rem;
+        font-size: 1.1rem;
+    }
+    .logo-banner{
+        &__img {
+            &_media720 {
+                display: none;
+            }
+            &_media480{
+                display: block;
+            }
+        }
+        &__text{
+            margin-top: 3rem;
+        }
+
+    }
+    .content{
+        margin-top: 2.4rem;
+        &__title{
+            font-size: 2.1rem;
+            width: 36rem;
+        }
+        &-list{
+            &__text{
+                font-size: 1.4rem;
+                &1{
+                    font-size: 1.6rem;
+                }
+                &2_mob-block{
+                    display: none;
+                }
+                &3{
+                    margin-top: 1.5rem;
+                    width: 40rem;
+                }
+            }
+
+        }
+        &-logo{
+            &__left{
+                &-text{
+                    &1 {
+                        width: 30rem;
+                    }
+                }
+            }
+        }
+    }
+    .logo{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+        div {
+            margin: 0.5rem;
+        }
+        &-img {
+            width: 20rem;
+        }
+        &-container {
+            margin-top: 4.7rem;
+        }
+    }
+    .articles {
+        margin-top: 6rem;
+    }
+    ._margin-130-110 {
+        margin: 2rem 0;
+    }
+    ._margin-130-75 {
+        margin: 5rem 0 3.5rem;
+    }
+    .content__wrap2{
+        margin: 0;
+    }
+    .mobail{
+        display: none;
+    }
+    .agency{
+        display: none;
+    }
+    .about-us__wrapper{
+        display: none;
+    }
+    .services{
+        &__logo{
+            div{
+                display: none;
+                margin: 0;
+                &:first-child{
+                    display: flex;
+                }
+            }
+            &-img{
+                max-width: 45rem;
+                max-height: 100%;
+            }
+        }
+        &__text{
+            width: 27rem;
+            &_mod{
+                max-width: 18rem;
+            }
+        }
+        &__wrap{
+            div{
+                width: 19rem;
+            }
+            flex-wrap: wrap;
+            justify-content: space-between
+        }
+        &-page{
+            &__content{
+                margin-top: 1.5rem;
+                &-right{
+                    &_text3{
+                        display: none;
+                    }
+                }
+                &-title {
+                    font-size: 1.8rem;
+                }
+            }
+            &__title {
+                font-size: 2.9rem;
+            }
+        }
+    }
+    .common{
+        &-images{
+            &__image{
+                &-text{
+                    &1{
+                        font-size: 1.4rem;
+                        line-height: 2.3rem;
+                        width: 35rem;
+                    }
+                }
+                &-title{
+                    font-size: 2.4rem;
+                    width: 35rem;
+                    line-height: 3rem;
+                }
+            }
+        }
+        &-content{
+            &_right{
+                &__text{
+                    &2{
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        &_left{
+            &__bold{
+                &-text{
+                    &3{
+                        display: none;
+                    }
+                }
+            }
+        }
+        }
+        
+    }
+    .branding{
+        margin-top: 1rem;
+        &-left{
+            width: 44rem;
+            &__text{
+                display: none;
+                &_v2 {
+                    width: 43rem;
+                    margin: 0;
+                }
+            }
+            &__title{
+                display: none;
+            }
+        }
+        &-right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .brandbook{
+        &-swiper {
+            width: 47rem;
+            margin-top: 2rem;
+        }
+    }
+    .wrap{
+        flex-direction: column;
+        align-items: center;
+        height: 25rem;
+    }
+    .services #swiper-logo{
+        margin: 0;
+    }
+    .french{
+        &-press{
+            &__label{
+                margin: 0;
+                &-left{
+                    &_images{
+                        flex-direction: column;
+                        margin: 0;
+                    }
+                }
+            }
+            &__link {
+                margin-top: 4.5rem;
+            }
+            &__logos{
+                &-forms {
+                    width: 46.7rem;
+                    flex-direction: column;
+                    align-items: center;
+                    &__image{
+                        width: 46.7rem;
+                        height: 46.7rem;
+                    }
+                }
+            }
+        }
+    }
+    .podshipnik-logo__images div{
+        margin: 0 0 2rem 0;
+    }
+    .footer{
+        &-text{
+            display: none;
+        }
+        &-menu{
+            text-align: center;
+            &__text{
+                font-size: 1.4rem;
+            }
+        }
+        &-info{
+            text-align: center;
+            &__number{
+                font-size: 1.6rem;
+                &1{
+                    font-size: 1.6rem;
+                }
+            }
+        }
+        &-copyright{
+            bottom: 1rem;
+        }
+        &__container{
+            height: 30rem;
+        }
+    }
+}
+@media (max-width:360px){
+
+    .logo-banner__img {
+        &_media480{
+            display: none;
+        }
+        &_media360{
+            display: block;
+        }
+    }
+    .brandbook{
+        &-swiper {
+            width: 43rem;
+            margin: 0rem;
+        }
+    }
+    .common{
+        &-content{
+            &_left{
+                &__text{
+                    font-size: 1.4rem;
+                }
+            }
+            &_right{
+                &__text{
+                    &2{
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+        &-images{
+            &__image{
+                &-text{
+                    &2{
+                        font-size: 1.4rem;
+                        width: 37rem;
+                    }
+                }
+                &-link{
+                        font-size: 1.4rem;
+                        width: 37rem;
+                }
+            }
+
+        }
+    }
+}
