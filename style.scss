@@ -134,6 +134,9 @@ a{
 ._margin-top-100{
     margin-top: 10rem;
 }
+._padding-left20{
+    padding-left: 2rem;
+}
 ._height104{
     height: 104%;
 }
@@ -556,7 +559,6 @@ a{
         font-size: 1.6rem;
         font-weight: 400;
         line-height: 3.7rem;
-        /* Text style for "П, редлага" */
         letter-spacing: 0.035rem;
         a{
             font-style: italic;
@@ -565,10 +567,10 @@ a{
     &-list__text4{
             color: #080808;
             font-family: "Arial Narrow";
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             font-weight: 400;
             line-height: 3.5rem;
-            letter-spacing: 0.035rem;
+            text-transform: uppercase;
     }
     &-logo__right-text2{
         color: #2323cf;
@@ -1292,6 +1294,9 @@ a{
     }
     &__img{
         width: 45rem;
+        &1{
+            width: 16rem;
+        }
     }
 }
 .common-content_right {
@@ -1636,7 +1641,7 @@ a{
     }
 
     &-right {
-        max-width: 63.2rem;
+        max-width: 65.2rem;
     }
     &-right_title {
         color: #000000;
@@ -1687,10 +1692,20 @@ a{
     a{
         font-style: italic;
     }
+    &_arrow{
+        text-align: center;
+        width: 23rem;
+    }
     &-left{
         width: 31.6rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         &__img{
             width: 12rem;
+            &1{
+                width: 6rem;
+            }
         }
     }
     &-left__title {
@@ -1705,7 +1720,6 @@ a{
         color:#080808;
         font-family:"Arial Narrow";
         font-size:1.6rem;
-        margin-top: 2.5rem;
         line-height: 2.9rem;
         &-none{
             width: 31.6rem;
@@ -1824,26 +1838,48 @@ a{
 ._margin-top-15{
     margin-top: 1.5rem;
 }
+._margin-top-10{
+    margin-top: 1rem;
+}
 .price{
     margin-top: 5rem;
     &-left{
-        max-width: 65rem;
+        max-width: 62rem;
         width: 100%;
     }
     &-right{
         max-width: 63.2rem;
         width: 100%;
         text-align: center;
+        &1{
+            max-width: 96rem;
+            width: 100%;
+            text-align: center; 
+        }
     }
     &__wrapper{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        &:nth-child(2n) {
+            margin-top: 4rem;
+           } 
     }
     &__conteiner{
         width: 25.3rem;
         display: flex;
         align-items: center;
         flex-direction: column;
+        &1{
+            width: 25.3rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 45rem;
+            & div{
+                width: 23rem;
+            }
+        }
     }
     &__a{
         font-style: italic;
@@ -1894,6 +1930,16 @@ a{
         display: flex;
         flex-direction: column;
         align-items: center;
+        &1{
+            max-width: 29.3rem;
+            width: 100%;
+            height: 46rem;
+            background: #f2f4f5;
+            box-shadow: 0 0 1.8rem 0.5rem #858484;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
     &__right{
         max-width: 29.3rem;
@@ -1904,8 +1950,23 @@ a{
         display: flex;
         flex-direction: column;
         align-items: center;
+        &1{
+            max-width: 29.3rem;
+            width: 100%;
+            height: 46rem;
+            background: #f2f4f5;
+            box-shadow: 0 0 1.8rem 0.5rem #858484;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
-
+}
+.blue{
+    color: #003399;
+}
+._text-align-end{
+    text-align: end;
 }
 @media (max-width:1024px){
     .header{
@@ -2338,6 +2399,9 @@ a{
                 max-width: 63rem;
                 &__img{
                     display: none;
+                    &1{
+                        display: none;
+                    }
                 }
             }
             &_right{
@@ -2456,6 +2520,14 @@ a{
                 display: none;
             }
         }
+    }
+    // дисплей блок с 500 по 767
+    ._display-block767{
+        display: block;
+    }
+    // дисплей отрубает с 767
+    ._display-none767{
+        display: none;
     }
 }
 
@@ -2637,9 +2709,15 @@ a{
     .branding{
         margin-top: 1rem;
         &-left{
-            width: 44rem;
+            width: 40rem;
+            &__display-wrap-500px{
+                display: flex;
+                justify-content: space-between;
+                width: 30rem;
+            }
             &__text{
                 display: none;
+                width: 40rem;
                 &_v2 {
                     width: 43rem;
                     margin: 0;
@@ -2653,6 +2731,13 @@ a{
             display: flex;
             flex-direction: column;
             align-items: center;
+            & div{
+                margin: 1rem 0;
+            }
+            &__img{
+                max-width: 50rem;
+                max-height: 100%;
+            }
         }
     }
     .brandbook{
@@ -2699,6 +2784,13 @@ a{
     .podshipnik-logo__images div{
         margin: 0 0 2rem 0;
     }
+    .price{
+        &__wrapper{
+            flex-direction: column;
+            align-items: center;
+            height: 143rem;
+        }
+    }
     .footer{
         &-text{
             display: none;
@@ -2724,6 +2816,17 @@ a{
         &__container{
             height: 30rem;
         }
+    }
+    // дисплей блок с 500 по 360
+    ._display-block500{
+        display: block;
+    }
+    // отрубается с 500
+    ._display-none500{
+        display: none;
+    }
+    ._display-block767{
+        display: none;
     }
 }
 @media (max-width:360px){
