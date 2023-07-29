@@ -225,7 +225,9 @@ a{
     font-size: 1.8rem;
     font-style: italic;
 }
-
+._text-align-center{
+    text-align: center;
+}
 ._flex-container {
     display: flex;
     justify-content: space-between;
@@ -1688,6 +1690,9 @@ a{
     margin-top: 7rem;
     &1{
         margin-top: 4.5rem;
+        display: grid;
+        grid-template-columns: repeat(4 , 1fr);
+        column-gap: 1rem;
     }
     a{
         font-style: italic;
@@ -1701,6 +1706,14 @@ a{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        &1{
+            height: 96rem;
+            width: 29rem;
+            grid-row: 1/3;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
         &__img{
             width: 12rem;
             &1{
@@ -1759,6 +1772,10 @@ a{
             }
         }
     }
+}
+._mod-branding{
+    height: 46rem;
+    grid-row: 1/2;
 }
 .bikson-logo__images-text {
     color: #000000;
@@ -2137,6 +2154,9 @@ a{
             width: 18rem;
             height: 103rem;
             justify-content: space-between;
+            &1{
+                width: 22.3rem;
+            }
             .BOLD{
                 font-size: 1.4rem;
             }
@@ -2146,7 +2166,7 @@ a{
         }   
     } 
 }
-@media (max-width:767px) {
+@media (max-width:769px) {
     .border {
         border-top: .3rem solid #ccc;
         margin: 0 1.2rem;
@@ -2349,6 +2369,10 @@ a{
     .branding{
         flex-direction: column;
         margin-top: 2rem;
+        &1{
+            grid-template-columns: 1fr 1fr;
+            row-gap: 4rem;
+        }
         &-left{
             width: 59rem;
             &__text{
@@ -2529,6 +2553,10 @@ a{
     ._display-none767{
         display: none;
     }
+    // дисплей блок с 767 по 360
+    ._display-block360{
+        display: block;
+    }
 }
 
 
@@ -2708,8 +2736,16 @@ a{
     }
     .branding{
         margin-top: 1rem;
+        &1{
+            grid-template-columns: 1fr;
+            row-gap: 2rem;
+            justify-items: center;
+        }
         &-left{
             width: 40rem;
+            &1{
+                height: 60rem;
+            }
             &__display-wrap-500px{
                 display: flex;
                 justify-content: space-between;
@@ -2717,7 +2753,7 @@ a{
             }
             &__text{
                 display: none;
-                width: 40rem;
+                width: 35rem;
                 &_v2 {
                     width: 43rem;
                     margin: 0;
@@ -2739,6 +2775,9 @@ a{
                 max-height: 100%;
             }
         }
+    }
+    ._mod-branding{
+        height: 46rem;
     }
     .brandbook{
         &-swiper {
