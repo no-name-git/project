@@ -139,8 +139,8 @@ a{
 ._margin-top-100{
     margin-top: 10rem;
 }
-._padding-left20{
-    padding-left: 2rem;
+._padding-left50{
+    padding-left: 5rem;
 }
 ._height104{
     height: 104%;
@@ -575,7 +575,7 @@ a{
     &-list__text4{
             color: #080808;
             font-family: "Arial Narrow";
-            font-size: 1.6rem;
+            font-size: 1.5rem;
             font-weight: 400;
             line-height: 3.5rem;
             text-transform: uppercase;
@@ -1698,7 +1698,7 @@ a{
         margin-top: 4.5rem;
         display: grid;
         grid-template-columns: repeat(4 , 1fr);
-        column-gap: 1rem;
+        gap: 1rem;
         a{
             font-style: italic;
         }
@@ -1973,7 +1973,7 @@ a{
         &1{
             max-width: 29.3rem;
             width: 100%;
-            height: 46rem;
+            height: 47rem;
             background: #f2f4f5;
             box-shadow: 0 0 1.8rem 0.5rem #858484;
             display: flex;
@@ -1993,7 +1993,7 @@ a{
         &1{
             max-width: 29.3rem;
             width: 100%;
-            height: 46rem;
+            height: 47rem;
             background: #f2f4f5;
             box-shadow: 0 0 1.8rem 0.5rem #858484;
             display: flex;
@@ -2010,6 +2010,9 @@ a{
 }
 ._font-size45{
     font-size: 4.5rem;
+}
+._font-size35{
+    font-size: 3.5rem;
 }
 ._text-transform-none{
     text-transform: none;
