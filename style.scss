@@ -2026,6 +2026,15 @@ a{
         font-size: 1.8rem;
         line-height: 3.5rem;
     }
+    &__square{
+            background: #ECEFEF;
+            width: 29rem;
+            height: 22rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    }
 }
 .border-bottom{
     border-bottom: .5rem solid #999;
@@ -2047,6 +2056,26 @@ a{
 }
 ._text-transform-none{
     text-transform: none;
+}
+._line-height35{
+    line-height: 3.5rem;
+}
+._line-height30{
+    line-height: 3rem;
+}
+._width26{
+    width: 26rem;
+}
+._width23{
+    width: 23rem;
+}
+._align-items-center{
+    align-items: center;
+}
+._justify-content-space-between{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 @media (max-width:1024px){
     .header{
