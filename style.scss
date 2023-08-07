@@ -988,11 +988,57 @@ a{
     &_center{
         background: #000099;
         width: 40.5rem;
-        height: 46.6rem;
+        height: 43.6rem;
         max-width: 100%;
         color: #fff;
     }
+    
 }
+.form{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80rem;
+    &-title{
+        font-family: "Arial - Bold Italic MT";
+        font-size: 1.6rem;
+        width: 36rem;
+    }
+    &-input{
+        background: #ccc;
+        font-family: "Arial - Bold Italic MT";
+        border: none;
+        padding: 1.5rem;
+        width: 35rem;
+    }
+    &-checkbox{
+        width: 1.5rem;
+    }
+    li{
+        list-style-type: none;
+        font-family: "Arial - Italian";
+        font-size: 1rem;
+        width: 36rem;
+    }
+    button{
+        background: #ff0033;
+        color: #fff;
+        border: none;
+        font-family: "Arial Narrow - Bold";
+        font-size: 3rem;
+        text-transform: uppercase;
+        padding: 2.2rem 0;
+        box-shadow: 0 0 5px 2px #a0a0a0;
+        cursor:pointer;
+        width: 36rem;
+    }
+    
+}
+::-webkit-input-placeholder {color:#fff;}
+::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#fff;}
 .contacts{
     &_center{
         display: flex;
@@ -2087,6 +2133,9 @@ a{
 ._height60{
     height: 60rem;
 }
+._height19{
+    height: 19rem;
+}
 ._height35{
     height: 35rem;
 }
@@ -2101,6 +2150,9 @@ a{
 }
 ._height27{
     height: 27rem;
+}
+._height80{
+    height: 80rem;
 }
 ._margin-left27{
     margin-left: 2.7rem;
