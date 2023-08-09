@@ -43,7 +43,7 @@ html{
     @media (max-width:1024px) {
         font-size: calc(100vw / 768 * 7.5);
     }
-    @media (max-width:767px) {
+    @media (max-width:769px) {
         font-size: calc(100vw / 500 * 6.6);
     }
     @media (max-width:500px) {
@@ -162,6 +162,9 @@ a{
 }
 ._padding0{
     padding: 0;
+}
+._paddind-bottom75{
+    padding-bottom: 7.5rem;
 }
 ._margin-left40{
     margin-left: 4rem;
@@ -1651,7 +1654,9 @@ a{
     }
     &-rigth{
         margin-left: 4rem;
+        width: 96rem;
     }
+    
 }
 .dropbtn {
     width: 20rem;
@@ -2057,7 +2062,6 @@ a{
     }
 }
 .blog{
-    padding-bottom: 7.5rem;
     &__img{
         max-width: 62rem;
     }
@@ -2093,6 +2097,9 @@ a{
 }
 ._text-align-end{
     text-align: end;
+}
+._text-transform-none{
+    text-transform: none;
 }
 ._font-size45{
     font-size: 4.5rem;
@@ -2263,6 +2270,12 @@ a{
         &__text{
             line-height: 2.8rem;
         }
+        &-content{
+            margin-top: 2rem;
+        }
+        &-rigth{
+            width: 70rem;
+        }
     }
     .common{
         &-content{
@@ -2355,6 +2368,26 @@ a{
             }
         }   
     } 
+    .blog{
+        &__img{
+            max-width: 50rem;
+        }
+        &-right{
+            max-width: 50rem;
+        }
+        &__text{
+            font-size: 1.6rem;
+        }
+    }
+    .articles{
+        &__title{
+            font-size: 2.2rem;
+        }
+    }
+    .agency__content_text-uppercase{
+        font-size: 1.8rem;
+    }
+
 }
 @media (max-width:769px) {
     .border {
@@ -2735,6 +2768,35 @@ a{
             }
         }
     }
+    .blog{
+        &__wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
+            margin-top: 6rem;
+            padding-bottom: 3.5rem;
+        }
+    }
+    .advantages{
+        &-content{
+            flex-direction: column;
+            gap: 2rem;
+        }
+        &-left{
+            width: 70rem;
+            flex-direction: row;
+            height: auto;
+        }
+        &-rigth{
+            margin: 0;
+        }
+        &__img{
+            &1{
+                width: 22rem;
+            }
+        }
+    }
     // дисплей блок с 500 по 767
     ._display-block767{
         display: block;
@@ -2887,6 +2949,17 @@ a{
             }
         }
     }
+    .advantages{
+        &-left{
+            width: 47rem;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+        &-rigth{
+            width: 47rem;
+        }
+    }
     .common{
         &-images{
             &__image{
@@ -3020,6 +3093,14 @@ a{
             height: 143rem;
         }
     }
+    .blog{
+        &__img {
+            max-width: 48rem;
+        }
+        &-right {
+            max-width: 48rem;
+        }
+    }
     .footer{
         &-text{
             display: none;
@@ -3072,6 +3153,19 @@ a{
         &-swiper {
             width: 43rem;
             margin: 0rem;
+        }
+    }
+    .advantages{
+        &-rigth{
+            width: 42rem;
+        }
+        &-left{
+            width: 42rem;
+        }
+    }
+    .blog{
+        &__img {
+            max-width: 43rem;
         }
     }
     .common{
