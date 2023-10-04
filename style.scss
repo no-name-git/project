@@ -76,6 +76,9 @@ a{
 .white{
     color: #fff;
 }
+.color333{
+    color: #333;
+}
 ._margin-130-75{
     margin: 13rem 0 7.5rem;
 }
@@ -428,6 +431,7 @@ a{
 }
 .swiper-pagination-banner{
     text-align: center;
+    margin-top: .5rem;
 }
 .logo-banner__img_media720,
 .logo-banner__img_media480,
@@ -672,133 +676,6 @@ a{
 ._text {
     text-decoration: none;
 }
-
-
-// слайдер логотипов
-// #brick-img {
-//     max-width: 11.8rem;
-//     width: 100%;
-//     max-height: 10rem;
-// } 
-
-// #kriz-img {
-//     max-width: 13.6rem;
-//     width: 100%;
-//     max-height: 60.5rem;
-// }
-
-// #pc-img {
-//     max-width: 16.3rem;
-//     width: 100%;
-//     max-height: 3.5rem;
-// }
-
-// #vet-img {
-//     max-width: 16.1rem;
-//     width: 100%;
-//     max-height: 4.6rem;
-// }
-
-// #int-img {
-//     max-width: 15.8rem;
-//     width: 100%;
-//     max-height: 4rem;
-// }
-
-// #sarbk-img {
-//     max-width: 16.1rem;
-//     width: 100%;
-//     max-height: 6rem;
-// }
-
-// #trans-img {
-//     max-width: 16.1rem;
-//     width: 100%;
-//     max-height: 10rem;
-// }
-
-// #jaso-img {
-//     max-width: 14.1rem;
-//     width: 100%;
-//     max-height: 10rem;
-// }
-
-// #okno-img {
-//     max-width: 16.1rem;
-//     width: 100%;
-//     max-height: 8rem;
-// }
-
-// #podshipnik-img {
-//     width: 100%;
-//     max-width: 60%;
-// }
-
-// #dental-img {
-//     max-width: 16.1rem;
-//     width: 100%;
-//     max-height: 4.6rem;
-// }
-
-// #briik-img {
-//     max-width: 16.1rem;
-//     width: 100%;
-//     max-height: 4.6rem;
-// }
-
-// #agava-img {
-//     max-width: 16.1rem;
-//     width: 100%;
-//     max-height: 4.6rem;
-// }
-
-// #profi-img {
-//     max-width: 13.6rem;
-//     width: 100%;
-//     max-height: 7rem;
-// }
-
-// #sari-img {
-//     max-width: 10.6rem;
-//     width: 100%;
-//     max-height: 10rem;
-// }
-
-// #geodor-img {
-//     max-width: 16.1rem;
-//     width: 100%;
-//     max-height: 4.6rem;
-// }
-
-// #spec-img {
-//     max-width: 13.6rem;
-//     width: 100%;
-//     max-height: 60.5rem;
-// }
-
-// #sun-img {
-//     max-width: 6.5rem;
-//     width: 100%;
-//     max-height: 10rem;
-// }
-
-// #memory-img {
-//     max-width: 13.6rem;
-//     width: 100%;
-//     max-height: 4.5rem;
-// }
-
-// #tisn-img {
-//     max-width: 13.6rem;
-//     width: 100%;
-//     max-height: 60.5rem;
-// }
-
-// #byket-img {
-//     max-width: 16.1rem;
-//     width: 100%;
-//     max-height: 4.6rem;
-// }
 .agency {
     margin-top: 6.3rem;
     &__content {
@@ -1790,11 +1667,11 @@ a{
         }
     }
     &-left__title {
-        color:#333333;
-        font-family:"Myriad Pro - Bold Cond";
-        font-size:1.8rem;
+        color: #333333;
+        font-family: "Myriad Pro - Bold Cond";
+        font-size: 1.8rem;
         text-transform: uppercase;
-        line-height: 3.4rem;
+        line-height: 3rem;
     }
     &-left__text {
         width: 31.6rem;
@@ -1828,6 +1705,50 @@ a{
         max-width: 93rem;
         & div{
             margin: 1rem;
+        }
+        &__item{
+            margin: 1rem;
+            position: relative;
+        }
+        &__text{
+            position: absolute;
+            z-index: 1;
+            right: 2.4rem;
+            top: 2.4rem;
+            font-size: 2rem;
+            font-family: "Myriad Pro - Bold Cond";
+            text-transform: uppercase;
+            text-align: end;
+        }
+        &__wrapper{
+            position: absolute;
+            z-index: 2;
+            top: -6px;
+            left: -7px;
+            background: #f1f3f3;
+            width: 102%;
+            height: 101%;
+            display: none;
+            padding: 6rem 0 4rem;
+            .active{
+                display: block;
+            }
+        }
+        &__wrap{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 19rem;
+        }
+        &__title{
+            font-size: 2rem;
+            font-family: "Myriad Pro - Bold Cond";
+            text-transform: uppercase;
+        }
+        &__subtitle{
+            font-size: 1.4rem;
+            font-family: "Arial Narrow";
+            line-height: 2.5rem;
         }
         &__img {
             max-width: 30rem;
@@ -2107,6 +2028,9 @@ a{
 ._font-size35{
     font-size: 3.5rem;
 }
+._font-size25{
+    font-size: 2.5rem;
+}
 ._line-height35{
     line-height: 3.5rem;
 }
@@ -2170,6 +2094,9 @@ a{
 ._margin-left27{
     margin-left: 2.7rem;
 }
+._margin-left10{
+    margin-left: 1rem;
+}
 ._margin0{
     margin: 0;
 }
@@ -2195,6 +2122,21 @@ a{
 }
 ._font-size16{
     font-size: 1.6rem;
+}
+._line-height-revert{
+    line-height: revert;
+}
+.big-line{
+    width: 75rem;
+}
+.medium-line{
+    width: 65rem;
+}
+.small-line{
+    width: 54rem;
+}
+.very-small-line{
+    width: 25rem;
 }
 @media (max-width:1024px){
     .header{
@@ -2250,8 +2192,13 @@ a{
         &__link{
             font-size: 2.1rem;
         }
-        &-page__content-right {
-            max-width: 49.2rem;
+        &-page__content{
+            &-right {
+                max-width: 49.2rem;
+            }
+            &-title{
+                font-size: 3rem;
+            }
         }
     }
     .branding{
@@ -2401,7 +2348,15 @@ a{
     .agency__content_text-uppercase{
         font-size: 1.8rem;
     }
-
+    .big-line{
+        width: 55rem;
+    }
+    .medium-line{
+        width: 50rem;
+    }
+    .small-line{
+        width: 39rem;
+    }
 }
 @media (max-width:769px) {
     .border {
@@ -2595,7 +2550,7 @@ a{
                     }
                 }
                 &-title{
-                    font-size: 2.6rem;
+                    font-size: 2.2rem;
                 }
             }
             &__title{
@@ -2828,6 +2783,18 @@ a{
         align-items: center;
         flex-direction: column;
     }
+    .big-line {
+        width: 40rem;
+    }
+    .medium-line {
+        width: 37rem;
+    }
+    .small-line {
+        width: 27rem;
+    }
+    .very-small-line {
+        width: 10rem;
+    }
 }
 
 
@@ -2860,12 +2827,13 @@ a{
     .content{
         margin-top: 2.4rem;
         &__title{
-            font-size: 2.1rem;
-            width: 36rem;
+            font-size: 2rem;
+            letter-spacing: 0.001rem;
         }
         &-list{
             &__text{
                 font-size: 1.4rem;
+                margin-top: 1.5rem;
                 &1{
                     font-size: 1.6rem;
                 }
@@ -2883,7 +2851,7 @@ a{
             &__left{
                 &-text{
                     &1 {
-                        width: 30rem;
+                        width: 100%;
                     }
                 }
             }
@@ -2963,9 +2931,7 @@ a{
                     font-size: 1.8rem;
                 }
             }
-            &__title {
-                font-size: 2.9rem;
-            }
+            
         }
     }
     .advantages{
@@ -2979,6 +2945,7 @@ a{
             width: 47rem;
         }
     }
+    
     .common{
         &-images{
             &__image{
@@ -3004,6 +2971,7 @@ a{
                     }
                 }
             }
+            
         &_left{
             &__bold{
                 &-text{
@@ -3011,6 +2979,9 @@ a{
                         display: none;
                     }
                 }
+            }
+            &__text{
+                line-height: 3.5rem;
             }
         }
         }
@@ -3059,7 +3030,7 @@ a{
         }
     }
     ._mod-branding{
-        height: 46rem;
+        height: 42rem;
     }
     .brandbook{
         &-swiper {
@@ -3161,6 +3132,15 @@ a{
         display: flex;
         flex-direction: column;
     }
+    .big-line {
+        width: 17rem;
+    }
+    .medium-line {
+        width: 15rem;
+    }
+    .small-line {
+        width: 7rem;
+    }
 }
 @media (max-width:360px){
 
@@ -3221,5 +3201,14 @@ a{
             }
 
         }
+    }
+    .big-line {
+        width: 13rem;
+    }
+    .medium-line {
+        width: 10rem;
+    }
+    .small-line {
+        width: 5rem;
     }
 }

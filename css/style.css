@@ -88,6 +88,10 @@ a {
   color: #fff;
 }
 
+.color333 {
+  color: #333;
+}
+
 ._margin-130-75 {
   margin: 13rem 0 7.5rem;
 }
@@ -490,6 +494,7 @@ a {
 
 .swiper-pagination-banner {
   text-align: center;
+  margin-top: 0.5rem;
 }
 
 .logo-banner__img_media720,
@@ -1747,7 +1752,7 @@ a {
   font-family: "Myriad Pro - Bold Cond";
   font-size: 1.8rem;
   text-transform: uppercase;
-  line-height: 3.4rem;
+  line-height: 3rem;
 }
 .branding-left__text {
   width: 31.6rem;
@@ -1782,6 +1787,50 @@ a {
 }
 .branding-right div {
   margin: 1rem;
+}
+.branding-right__item {
+  margin: 1rem;
+  position: relative;
+}
+.branding-right__text {
+  position: absolute;
+  z-index: 1;
+  right: 2.4rem;
+  top: 2.4rem;
+  font-size: 2rem;
+  font-family: "Myriad Pro - Bold Cond";
+  text-transform: uppercase;
+  text-align: end;
+}
+.branding-right__wrapper {
+  position: absolute;
+  z-index: 2;
+  top: -6px;
+  left: -7px;
+  background: #f1f3f3;
+  width: 102%;
+  height: 101%;
+  display: none;
+  padding: 6rem 0 4rem;
+}
+.branding-right__wrapper .active {
+  display: block;
+}
+.branding-right__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 19rem;
+}
+.branding-right__title {
+  font-size: 2rem;
+  font-family: "Myriad Pro - Bold Cond";
+  text-transform: uppercase;
+}
+.branding-right__subtitle {
+  font-size: 1.4rem;
+  font-family: "Arial Narrow";
+  line-height: 2.5rem;
 }
 .branding-right__img {
   max-width: 30rem;
@@ -2073,6 +2122,10 @@ a {
   font-size: 3.5rem;
 }
 
+._font-size25 {
+  font-size: 2.5rem;
+}
+
 ._line-height35 {
   line-height: 3.5rem;
 }
@@ -2157,6 +2210,10 @@ a {
   margin-left: 2.7rem;
 }
 
+._margin-left10 {
+  margin-left: 1rem;
+}
+
 ._margin0 {
   margin: 0;
 }
@@ -2188,6 +2245,26 @@ a {
 
 ._font-size16 {
   font-size: 1.6rem;
+}
+
+._line-height-revert {
+  line-height: revert;
+}
+
+.big-line {
+  width: 75rem;
+}
+
+.medium-line {
+  width: 65rem;
+}
+
+.small-line {
+  width: 54rem;
+}
+
+.very-small-line {
+  width: 25rem;
 }
 
 @media (max-width: 1024px) {
@@ -2230,6 +2307,9 @@ a {
   }
   .services-page__content-right {
     max-width: 49.2rem;
+  }
+  .services-page__content-title {
+    font-size: 3rem;
   }
   .branding-left__text {
     line-height: 2rem;
@@ -2345,6 +2425,15 @@ a {
   }
   .agency__content_text-uppercase {
     font-size: 1.8rem;
+  }
+  .big-line {
+    width: 55rem;
+  }
+  .medium-line {
+    width: 50rem;
+  }
+  .small-line {
+    width: 39rem;
   }
 }
 @media (max-width: 769px) {
@@ -2519,7 +2608,7 @@ a {
     display: none;
   }
   .services-page__content-title {
-    font-size: 2.6rem;
+    font-size: 2.2rem;
   }
   .services-page__title {
     font-size: 2.4rem;
@@ -2701,6 +2790,18 @@ a {
     align-items: center;
     flex-direction: column;
   }
+  .big-line {
+    width: 40rem;
+  }
+  .medium-line {
+    width: 37rem;
+  }
+  .small-line {
+    width: 27rem;
+  }
+  .very-small-line {
+    width: 10rem;
+  }
 }
 @media (max-width: 500px) {
   .header {
@@ -2727,11 +2828,12 @@ a {
     margin-top: 2.4rem;
   }
   .content__title {
-    font-size: 2.1rem;
-    width: 36rem;
+    font-size: 2rem;
+    letter-spacing: 0.001rem;
   }
   .content-list__text {
     font-size: 1.4rem;
+    margin-top: 1.5rem;
   }
   .content-list__text1 {
     font-size: 1.6rem;
@@ -2744,7 +2846,7 @@ a {
     width: 40rem;
   }
   .content-logo__left-text1 {
-    width: 30rem;
+    width: 100%;
   }
   .logo {
     flex-wrap: wrap;
@@ -2814,9 +2916,6 @@ a {
   .services-page__content-title {
     font-size: 1.8rem;
   }
-  .services-page__title {
-    font-size: 2.9rem;
-  }
   .advantages-left {
     width: 47rem;
     flex-direction: column;
@@ -2841,6 +2940,9 @@ a {
   }
   .common-content_left__bold-text3 {
     display: none;
+  }
+  .common-content_left__text {
+    line-height: 3.5rem;
   }
   .branding {
     margin-top: 1rem;
@@ -2885,7 +2987,7 @@ a {
     max-height: 100%;
   }
   ._mod-branding {
-    height: 46rem;
+    height: 42rem;
   }
   .brandbook-swiper {
     width: 47rem;
@@ -2969,6 +3071,15 @@ a {
     display: flex;
     flex-direction: column;
   }
+  .big-line {
+    width: 17rem;
+  }
+  .medium-line {
+    width: 15rem;
+  }
+  .small-line {
+    width: 7rem;
+  }
 }
 @media (max-width: 360px) {
   .logo-banner__img_media480 {
@@ -3003,5 +3114,14 @@ a {
   .common-images__image-link {
     font-size: 1.4rem;
     width: 37rem;
+  }
+  .big-line {
+    width: 13rem;
+  }
+  .medium-line {
+    width: 10rem;
+  }
+  .small-line {
+    width: 5rem;
   }
 }

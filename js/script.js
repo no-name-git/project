@@ -112,4 +112,11 @@ function toggleShowlogos() {
     logoContainerRef.style.display = "none";
     logoContainerBtnRef.innerText = "Показать ещё";
   }
-}
+};
+let click1 = document.querySelectorAll(".branding-right__img");
+let openWindow = document.querySelector(".branding-right__wrapper");
+for (let i = 0; i < click1.length; i++) {
+    click1[i].addEventListener('click' , function(){
+      openWindow.classList.toggle('active');
+    });
+};
